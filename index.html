@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonne Jones</title>
+    <style>
+        /* General Page Styling */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Black Background */
+            color: #ffffff;            /* White Text */
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Logo Section - Centered */
+        .main-content {
+            flex: 1; /* Pushes footer down */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* If you have an image, use this class */
+        .logo-img {
+            max-width: 300px;
+            height: auto;
+        }
+
+        /* Or use this Text Logo if you prefer pure code */
+        .text-logo {
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        
+        .initials {
+            font-size: 80px;
+            font-weight: 300; /* Thin lines */
+            border: 2px solid white;
+            padding: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .full-name {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        /* Footer Section - Stick to bottom */
+        footer {
+            width: 100%;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #333; /* Subtle separation line */
+        }
+
+        /* Link Styling */
+        .contact-link {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 14px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .contact-link:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main-content">
+        <div class="text-logo">
+            <div class="initials">LJ</div>
+            <div class="full-name">Leonne Jones</div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="mailto:leonne@leonnejones.com" class="contact-link">leonne@leonnejones.com</a>
+        
+        <a href="https://www.linkedin.com/in/leonnejones" target="_blank" class="contact-link">LinkedIn</a>
+    </footer>
+
+</body>
+</html>
