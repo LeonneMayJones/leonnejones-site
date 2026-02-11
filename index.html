@@ -2,153 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Leonne Jones - Brand Concepts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leone Jones | Data Engineer</title>
     <style>
-        /* BASE STYLES */
-        body {
-            background-color: #0a0a0a; /* Deep matte black */
-            color: #ffffff;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        /* Deep Charcoal & White Minimalist Base */
+        html, body {
+            height: 100%;
             margin: 0;
-            padding: 40px;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: #2C2C2C; /* Deep Charcoal */
             display: flex;
             flex-direction: column;
-            gap: 100px; /* Spacing between concepts */
             align-items: center;
+            justify-content: center;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
 
-        h2 {
-            font-size: 10px;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            color: #444;
-            margin-bottom: 20px;
+        .container {
             text-align: center;
+            padding: 20px;
         }
 
-        /* CONCEPT 1: The "Split" (Based on the one you liked) */
-        .concept-1-container {
-            text-align: center;
+        /* Initial-based Logo Mark */
+        .logo-mark {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -2px;
+            margin-bottom: 10px;
+            display: block;
         }
-        
-        .c1-logo {
-            font-family: 'Courier New', Courier, monospace; /* Monospace for engineering feel */
-            font-size: 64px;
+
+        .full-name {
+            font-size: 1.2rem;
             font-weight: 300;
-            letter-spacing: 15px;
-            border-bottom: 1px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-            display: inline-block;
-        }
-
-        .c1-pipe {
-            color: #666; /* Dimmed separator */
-            font-weight: 100;
-        }
-
-        .c1-name {
-            font-size: 14px;
             text-transform: uppercase;
-            letter-spacing: 6px;
-            color: #ccc;
+            letter-spacing: 8px;
+            margin-bottom: 60px;
+            display: block;
+            opacity: 0.8;
         }
 
-        /* CONCEPT 2: The "Terminal" (Data Engineering focus) */
-        .concept-2-container {
+        /* Contact Links Area */
+        .links-wrap {
             display: flex;
-            align-items: center;
+            flex-direction: column;
             gap: 20px;
         }
 
-        .c2-box {
-            border: 2px solid white;
-            width: 80px;
-            height: 80px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 32px;
-            font-weight: 700;
-            letter-spacing: -2px; /* Tight tracking */
+        .link-item {
+            font-size: 0.9rem;
+            text-decoration: none;
+            color: #2C2C2C;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 5px;
+            width: fit-content;
+            margin: 0 auto;
         }
 
-        .c2-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        .link-item:hover {
+            border-bottom: 1px solid #2C2C2C;
+            opacity: 0.6;
         }
 
-        .c2-name {
-            font-size: 24px;
-            font-weight: 600;
-            letter-spacing: 1px;
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            .logo-mark { font-size: 3rem; }
+            .full-name { font-size: 1rem; letter-spacing: 5px; }
         }
-
-        .c2-role {
-            font-family: 'Courier New', monospace;
-            color: #888;
-            font-size: 14px;
-        }
-
-        /* CONCEPT 3: The "Architect" (Ultra Minimal) */
-        .concept-3-container {
-            text-align: center;
-        }
-
-        .c3-monogram {
-            font-size: 120px;
-            line-height: 0.8;
-            font-weight: 100; /* Super thin */
-            opacity: 0.9;
-        }
-
-        .c3-L {
-            display: inline-block;
-            transform: translateX(10px); /* Overlap slightly */
-        }
-        .c3-J {
-            display: inline-block;
-            font-weight: 400; /* Thicker J for contrast */
-        }
-
-        .c3-footer {
-            margin-top: 20px;
-            font-size: 11px;
-            letter-spacing: 2px;
-            color: #555;
-        }
-
     </style>
 </head>
 <body>
 
-    <div>
-        <h2>Option 1: The "Split" (Engineering)</h2>
-        <div class="concept-1-container">
-            <div class="c1-logo">L<span class="c1-pipe">|</span>J</div>
-            <div class="c1-name">Leonne Jones</div>
-        </div>
-    </div>
+    <div class="container">
+        <div class="logo-mark">LJ</div>
+        <div class="full-name">Leone Jones</div>
 
-    <div>
-        <h2>Option 2: The "Terminal" (Tech/Data)</h2>
-        <div class="concept-2-container">
-            <div class="c2-box">LJ</div>
-            <div class="c2-text">
-                <div class="c2-name">LEONNE JONES</div>
-                <div class="c2-role">> Data Engineer_</div>
-            </div>
-        </div>
-    </div>
-
-    <div>
-        <h2>Option 3: The "Architect" (Sleek/Fashion)</h2>
-        <div class="concept-3-container">
-            <div class="c3-monogram">
-                <span class="c3-L">L</span><span class="c3-J">J</span>
-            </div>
-            <div class="c3-footer">LEONNEJONES.COM</div>
+        <div class="links-wrap">
+            <a href="mailto:leone@leonejones.com" class="link-item">leone@leonejones.com</a>
+            <a href="https://linkedin.com/in/leonejones" target="_blank" class="link-item">LinkedIn</a>
         </div>
     </div>
 
