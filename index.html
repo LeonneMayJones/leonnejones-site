@@ -21,77 +21,66 @@
         .container {
             text-align: center;
             padding: 20px;
-            max-width: 600px;
+            max-width: 800px;
         }
 
-        /* Hero Typography - Larger and Bolder */
-        .logo-mark {
-            font-size: 6.5rem; /* Increased size */
-            font-weight: 800;
-            letter-spacing: -4px;
-            line-height: 1;
-            margin-bottom: 15px;
-            display: block;
-        }
-
+        /* Full Name - The new hero of the page */
         .full-name {
-            font-size: 1.8rem; /* Increased size */
-            font-weight: 500;
+            font-size: 2.2rem;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 10px; /* Wider tracking for a high-end feel */
-            margin-bottom: 8px;
+            letter-spacing: 12px; /* Extra wide tracking for a luxury tech vibe */
+            margin-bottom: 12px;
             display: block;
         }
 
         .title {
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             font-weight: 300;
             text-transform: uppercase;
-            letter-spacing: 5px;
-            margin-bottom: 80px; /* More space before the links */
+            letter-spacing: 6px;
+            margin-bottom: 90px; /* Generous breathing room */
             display: block;
             opacity: 0.7;
         }
 
-        /* Links - Smaller and Lighter weight */
+        /* Subtle Links */
         .links-wrap {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 22px;
         }
 
         .link-item {
-            font-size: 0.75rem; /* Smaller for better balance */
-            font-weight: 300; /* Light weight as requested */
+            font-size: 0.8rem;
+            font-weight: 300;
             text-decoration: none;
             color: #2C2C2C;
             text-transform: uppercase;
             letter-spacing: 4px;
             transition: all 0.4s ease;
             border-bottom: 1px solid transparent;
-            padding-bottom: 4px;
+            padding-bottom: 5px;
             width: fit-content;
             margin: 0 auto;
-            opacity: 0.5; /* Faded by default */
+            opacity: 0.5;
         }
 
         .link-item:hover {
             border-bottom: 1px solid #2C2C2C;
-            opacity: 1; /* Pops on hover */
+            opacity: 1;
         }
 
         /* Mobile specific scaling */
         @media (max-width: 600px) {
-            .logo-mark { font-size: 4.5rem; }
-            .full-name { font-size: 1.3rem; letter-spacing: 6px; }
-            .title { margin-bottom: 50px; }
+            .full-name { font-size: 1.4rem; letter-spacing: 6px; }
+            .title { font-size: 0.8rem; margin-bottom: 60px; }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="logo-mark">LJ</div>
         <div class="full-name">Leonne Jones</div>
         <div class="title">Data Engineer</div>
 
